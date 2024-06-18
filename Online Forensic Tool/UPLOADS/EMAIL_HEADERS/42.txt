@@ -1,0 +1,13 @@
+MIME-Version: 1.0
+Date: Sun, 27 Feb 2022 18:36:12 +0530
+References: <411af087-b9e2-4566-a2b9-fcbb280cb51f@az.southcentralus.production.microsoft.com>
+In-Reply-To: <411af087-b9e2-4566-a2b9-fcbb280cb51f@az.southcentralus.production.microsoft.com>
+Message-ID: <CAKTyU1xb+q5xgorVn-+35kXu_0D2qtmfB8HgQzcwb0kLqJTu8w@mail.gmail.com>
+Subject: Fwd: You’ve used 20% of your Azure for Students credit
+From: Riju Bhattacharyya <ribh234@gmail.com>
+To: nikshitashetty23@gmail.com
+Content-Type: multipart/alternative; boundary="000000000000bcf4e205d8ff9872"
+
+--000000000000bcf4e205d8ff9872
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable

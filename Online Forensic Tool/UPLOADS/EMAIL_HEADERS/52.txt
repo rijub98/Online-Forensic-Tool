@@ -1,0 +1,89 @@
+Delivered-To: ribh234@gmail.com
+Received: by 2002:a05:6a10:a803:0:0:0:0 with SMTP id c3csp1741309pxy;
+        Thu, 28 Oct 2021 06:41:48 -0700 (PDT)
+X-Received: by 2002:a50:becf:: with SMTP id e15mr6482103edk.114.1635428507175;
+        Thu, 28 Oct 2021 06:41:47 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1635428507; cv=none;
+        d=google.com; s=arc-20160816;
+        b=WjO8wqMNK2hjWHxtzRPbvf/IWjbHy89wjrmzvYo7fVrerJXHlWLy/8S6M5+oEr7RcS
+         NzrNoFjmooRZPF/R20zkSh01dMdQ3sO3DyOlvTCfoh6skJ2dt4qHDxaPj6zLBAGP5etH
+         04HzBtCllC7F6evQmNCy5D9lBG9A7h7MUaJoT0MlXflzUTCrAXQJJ4d3Rv3NBsgpncyZ
+         sdQNgrpDr2uzG8WNcSJs+wyLsaJj1o7svcInMTw43x6qOcRiyooUmvDRcCNeFCN1HZ/q
+         R/cOwhLcaHSEWuq3+4icwLxZDGERVhe0YOfJlpPy+RhyQ6P6xJpEc6cRVzbws1LS5A7p
+         otJQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=cbPYa5gbyDVgckk83UxQsAr2KrgOmr4nJJRXiFFbsNg=;
+        b=W0not7tHvS/2gyx744PaQK0kq5GMgJKq421zsT+qy4LuwwWV43QUF8pMT/89s9y/61
+         ZIRVSHUJMtLnPX1+MBh0qTZklGVKzUMjGSK1U4dHW/StvLqZqQB7pKa5u8L3+70Kal5i
+         rYBbtEyyURO0P6dLNnQhjaL1scTfzwzsATMci62GEtrJXJYt8ET/ETUxFstPEvfNGlQ5
+         X1XoRYPniL8uMVZQW3aAsJLYf00opGPxTmVmbhUM7AB1d39LIuFT7GBxnsYAoY8FaHRt
+         FdwcR/d2PYG+943RGo4U5daficmvNLNR7S8Hb0QohNO4O/Ix5SPy03kUH8IqcpJbcxmi
+         R81A==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@student-xavier-ac-in.20210112.gappssmtp.com header.s=20210112 header.b=LjD6zrov;
+       spf=neutral (google.com: 209.85.220.41 is neither permitted nor denied by best guess record for domain of 20180111.brettleecpl@student.xavier.ac.in) smtp.mailfrom=20180111.brettleecpl@student.xavier.ac.in
+Return-Path: <20180111.brettleecpl@student.xavier.ac.in>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id u9sor4104497edr.9.2021.10.28.06.41.46
+        for <ribh234@gmail.com>
+        (Google Transport Security);
+        Thu, 28 Oct 2021 06:41:46 -0700 (PDT)
+Received-SPF: neutral (google.com: 209.85.220.41 is neither permitted nor denied by best guess record for domain of 20180111.brettleecpl@student.xavier.ac.in) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@student-xavier-ac-in.20210112.gappssmtp.com header.s=20210112 header.b=LjD6zrov;
+       spf=neutral (google.com: 209.85.220.41 is neither permitted nor denied by best guess record for domain of 20180111.brettleecpl@student.xavier.ac.in) smtp.mailfrom=20180111.brettleecpl@student.xavier.ac.in
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=student-xavier-ac-in.20210112.gappssmtp.com; s=20210112;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=cbPYa5gbyDVgckk83UxQsAr2KrgOmr4nJJRXiFFbsNg=;
+        b=LjD6zrovQvL/iF5Xu9MMTdAmcO7kzn8QSjYwxCyFe6TtAqG7zgq8TfDCITSjoVVnwv
+         ASU/70vnOYtQgBWmn2XN6bPTuWqyrd8Ls9Q0+XUcYTBrCZr1yDFuDFJwe9nY037tCWJv
+         CJQeM+Cqi1QQt4B8lwleI9wFBEdpPBTmA4BsZtpJAVuZNOlcNfmuSPNB8EzhT0H7cFDa
+         voyYGGmr3O8OClvoBPuwOdHWraHw/ixriEXHyi0KB9vWcPBLs8y+vJM35ZWrLswIZJoq
+         drJFZHzlibj4OgCLLP4tAh8AJWc4sqjwbUbXhk9IC2egqSEpVgoGwN7VdHf9QcYRDw6t
+         DInQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=cbPYa5gbyDVgckk83UxQsAr2KrgOmr4nJJRXiFFbsNg=;
+        b=xFGAm7jzkKWrXFjRGvKjFUl954/x4GybkBWqTPaoYVqo8BRMoPZcyRUYQxgls4/Hfl
+         qBo1H2R8hVwZOe1gwaH6hJqUcBNXP/znpttrJzExadgMhkAzoPWXFh90bv0pQtHinYqB
+         fdE1D4nXBBd3LnkMoexUtlHjVMjTNBIzf3vHY/heoqrbb5w15zcs0O1eIKlbzsGUoXv3
+         lVYx8O3Ndk/yMJunqttjtBFjNd/ZoVy1HbB4oM2Z0wNnwwuh1OimidBSolBoiDERjfEf
+         gP4y/oPHbJEcC3028gaIGj7wffG2hQz1Tbwk4/N+wd7xg96bPudhiuJWT/xJZEcZUdvK
+         QYCw==
+X-Gm-Message-State: AOAM531Y/FsTNnCtfSomcq5EA2jJbpgCyQRI8Q1HCThY3mjlEYgBJ1gD uh37wbndnkv52rxexWh4GoomBTHvF+JURD2VSECmnw==
+X-Google-Smtp-Source: ABdhPJwcFDGJpsGY7O2m1bkqDeojpjNm2XaULPqqwCwzdIsskUTMi3gF37BZM12JliRQwCf2trMBZInXZWjC7KzlGUc=
+X-Received: by 2002:a05:6402:2753:: with SMTP id z19mr6253335edd.340.1635428505601; Thu, 28 Oct 2021 06:41:45 -0700 (PDT)
+MIME-Version: 1.0
+From: Brettlee Correia <20180111.brettleecpl@student.xavier.ac.in>
+Date: Thu, 28 Oct 2021 19:11:33 +0530
+Message-ID: <CAO3+jWkeEE1Gj7sDuBkAG7Vzkng=tp=Vs2L51+hVE_pF7+wEWA@mail.gmail.com>
+Subject: I am sharing 'BECOMP Project Synopsis of Online Forensic tool'
+To: saurabh.p@xavier.ac.in, rosannejoesphin@gmail.com, Brettlee Correia <brettleec@gmail.com>, Riju Bhattacharyya <ribh234@gmail.com>
+Content-Type: multipart/mixed; boundary="000000000000221a6c05cf69dfa9"
+
+--000000000000221a6c05cf69dfa9
+Content-Type: multipart/alternative; boundary="000000000000221a6a05cf69dfa7"
+
+--000000000000221a6a05cf69dfa7
+Content-Type: text/plain; charset="UTF-8"
+
+
+
+--000000000000221a6a05cf69dfa7
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto"></div>
+
+--000000000000221a6a05cf69dfa7--
+--000000000000221a6c05cf69dfa9
+Content-Type: application/pdf; name="BECOMP Project Synopsis of Online Forensic tool.pdf"
+Content-Disposition: attachment; filename="BECOMP Project Synopsis of Online Forensic tool.pdf"
+Content-Transfer-Encoding: base64
+Content-ID: <17cc720730db7980f461>
+X-Attachment-Id: 17cc720730db7980f461
+
+
+--000000000000221a6c05cf69dfa9--

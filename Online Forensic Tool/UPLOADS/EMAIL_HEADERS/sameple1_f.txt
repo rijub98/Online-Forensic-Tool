@@ -1,0 +1,199 @@
+Delivered-To: ribh234@gmail.com
+Received: by 2002:a05:6a10:a78a:0:0:0:0 with SMTP id t10csp1652736pxx;
+        Sat, 2 Apr 2022 00:07:07 -0700 (PDT)
+X-Received: by 2002:a65:654f:0:b0:378:b8f6:ebe4 with SMTP id a15-20020a65654f000000b00378b8f6ebe4mr17666609pgw.399.1648883226995;
+        Sat, 02 Apr 2022 00:07:06 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1648883226; cv=none;
+        d=google.com; s=arc-20160816;
+        b=gxerkyU0n4hhuxcym15Ra6P5Ty2L7jxeQYT3SSFqXDRoT99f+GWucGIJtGtr4GpoHQ
+         tgqpyAU5iwahCDlh9nKqTZPRy7yF52oQuCVL4O67piYXGu8Y4B+zrIKiBrW0u+p79YdJ
+         9CxPay58lKJdXoytCQwszB3Wt2FCgBdQdmfJXOnm4+7FUHafaDpE152utsafyT3I1b8X
+         ovNxaxpE7M6tDd5GuJYFXkK75mXST2rjSKHIDKHizlCc35Fn02PPE1lHfFHAey6VvM/3
+         /m91mX2+HttFsyDyYH4vCsuMIpsAhUF8rZyg+fJnpQLpLA0qOGWxn5CxmXtKj62s+bH7
+         Vfdw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=in-reply-to:references:subject:from:date:message-id:auto-submitted
+         :to:dkim-signature;
+        bh=0+uJBJES8gpMMj+pOl0NSatOFwQGDZENYZfGBv7czGk=;
+        b=Z6LphrXzT8YSh3yjsfLF/g3ZzSdqbl6dDa94384Pa6z6HOUxgnX/hG4WRijFG2Ucu8
+         GsSX+vwkcft2rmmrkHRl3pKk5zgB3ZAzwyQwo45Y9TDJFK4cjO5xyCgLX3NCJdbrWcCm
+         cl5tXu9mHRTvaMlTyZwoV+5FK27ypaiNMZN7L8PIzSvxPlAaw0TwOaiKQMNypUeqJS4+
+         jQgxsgnp8Ur0UhJrG0pJFcSj0nNHROecaugwilKpFDk6Thk48G1VbPzW7ZY1O1ClwxQ3
+         11zDLcuksnEs5wG/Bm2mGaJzajSjUg3SOquIumy+tKX9XWVzZ0Hp9XMF+ylfeQ1D3NVV
+         ocWg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@googlemail.com header.s=20210112 header.b=cJHNkCMy;
+       spf=pass (google.com: best guess record for domain of postmaster@mail-sor-f69.google.com designates 209.85.220.69 as permitted sender) smtp.helo=mail-sor-f69.google.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=googlemail.com
+Return-Path: <>
+Received: from mail-sor-f69.google.com (mail-sor-f69.google.com. [209.85.220.69])
+        by mx.google.com with SMTPS id h3-20020a170902b94300b00155ff1a0bfdsor2080374pls.154.2022.04.02.00.07.06
+        for <ribh234@gmail.com>
+        (Google Transport Security);
+        Sat, 02 Apr 2022 00:07:06 -0700 (PDT)
+Received-SPF: pass (google.com: best guess record for domain of postmaster@mail-sor-f69.google.com designates 209.85.220.69 as permitted sender) client-ip=209.85.220.69;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@googlemail.com header.s=20210112 header.b=cJHNkCMy;
+       spf=pass (google.com: best guess record for domain of postmaster@mail-sor-f69.google.com designates 209.85.220.69 as permitted sender) smtp.helo=mail-sor-f69.google.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=googlemail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=googlemail.com; s=20210112;
+        h=to:auto-submitted:message-id:date:from:subject:references
+         :in-reply-to;
+        bh=0+uJBJES8gpMMj+pOl0NSatOFwQGDZENYZfGBv7czGk=;
+        b=cJHNkCMypw0ayYd+C6k/jxfhQX8F++4AGC1DqURwBGhTMATO40YB5f6lpP00iH8TsS
+         5mPcZ/+792R0czBr7I2j/jAalmY0vTvGaW1rnEadAv5Bu7MWgzZAUh/0UBhuGc4AdMak
+         tTKejrfPExVn78h6b2V0McagZ7ZMkmC9amdDEbkcRu3bVORop9oiuZ/kJDb4hXlxT5qJ
+         Jm2ZHkbBkiIc6qcIV2rI174rfHOesvExEaDc+UqlL/1ms9saDMSBPPBxQlDE2Kt5rPcI
+         670EQdYCOdmohEO8ghStoMU1ZN2pkQV2Bp8z034YHzTeq4S6Wc6ACYiFnsLYgZWFoXHA
+         lxqA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:to:auto-submitted:message-id:date:from:subject
+         :references:in-reply-to;
+        bh=0+uJBJES8gpMMj+pOl0NSatOFwQGDZENYZfGBv7czGk=;
+        b=HL+AIhdV9rKik1mh89FchfSa6JmORbPPnp2id1GxjSPKf2l6a6i1wnH53l4uh5u24s
+         DG1Rg17CgJszPYkMIsxgae261nY2xB406jjKSb2yAbRv9UjA97BHJ8f1AtPKEkOwj12A
+         uBHdsm3lJo4X+wMJe94ZSgKXFOUPLPziFfW852tC/Doj7HizW0cgZS79qSdT0bhFKwy3
+         adX3YHfp2hMbneZhBliyMSDkwyuENlQ0BwOUDVFTR11F9g8NVEstDzn19BvxUfCLxorn
+         vd/1Tvp5cFV/t8MXp64Yh0x0WcAuLmCKYPlUdxDfqSvtMHr4kD/OSUxmQslqKKroCmIM
+         Lptg==
+X-Gm-Message-State: AOAM532FGDk+2IzCmf78wSyf1KQG45aOrq+M+aIrrNVcV2P8X3Ch6oM+ +Gq5ekon/igSu+U2o4ocHHUy5gDphZDtCjytcH9X8A==
+X-Google-Smtp-Source: ABdhPJxglJuDs6YdrrzNyZUDlLJ/w/R8lTIHZo4H/g0gkw5K+qEairLOIlI/rfuaC9hf1soACtnouNCbKWKlyZOJMmRukwLCB+lDNVk=
+X-Received: by 2002:a17:902:9b98:b0:156:52b1:b100 with SMTP id y24-20020a1709029b9800b0015652b1b100mr13107617plp.174.1648883226359;
+        Sat, 02 Apr 2022 00:07:06 -0700 (PDT)
+Content-Type: multipart/report; boundary="000000000000fbacbe05dba68a43"; report-type=delivery-status
+To: ribh234@gmail.com
+Received: by 2002:a17:902:9b98:b0:156:52b1:b100 with SMTP id y24-20020a1709029b9800b0015652b1b100mr11533408plp.174; Sat, 02 Apr 2022 00:07:06 -0700 (PDT)
+Return-Path: <>
+Auto-Submitted: auto-replied
+Message-ID: <6247f61a.1c69fb81.8e295.a16f.GMR@mx.google.com>
+Date: Sat, 02 Apr 2022 00:07:06 -0700 (PDT)
+From: Mail Delivery Subsystem <mailer-daemon@googlemail.com>
+Subject: Delivery Status Notification (Failure)
+References: <411af087-b9e2-4566-a2b9-fcbb280cb51f@az.southcentralus.production.microsoft.com> <CAKTyU1xb+q5xgorVn-+35kXu_0D2qtmfB8HgQzcwb0kLqJTu8w@mail.gmail.com> <CAKTyU1zYFbrNE2Ry9OKj019i3DJzK6eGsx5qZ3sONvpcs=KCFw@mail.gmail.com> <CAKTyU1x9Sj53ru_BUQaWbqZxwG3Vd0PsAfmHF1nVB7cfK-hynA@mail.gmail.com>
+In-Reply-To: <CAKTyU1x9Sj53ru_BUQaWbqZxwG3Vd0PsAfmHF1nVB7cfK-hynA@mail.gmail.com>
+X-Failed-Recipients: joshpaulbakugan@gmial.com
+
+--000000000000fbacbe05dba68a43
+Content-Type: multipart/related; boundary="000000000000fbb3bf05dba68a47"
+
+--000000000000fbb3bf05dba68a47
+Content-Type: multipart/alternative; boundary="000000000000fbb3c505dba68a48"
+
+--000000000000fbb3c505dba68a48
+Content-Type: text/plain; charset="UTF-8"
+
+
+** Message not delivered **
+
+There was a problem delivering your message to joshpaulbakugan@gmial.com. See the technical details below.
+
+Learn more here: https://support.google.com/mail/answer/7720
+
+The response was:
+
+The recipient server did not accept our requests to connect. Learn more at https://support.google.com/mail/answer/7720 
+[gmial.com 54.159.98.68: timed out]
+
+--000000000000fbb3c505dba68a48
+Content-Type: text/html; charset="UTF-8"
+
+
+<html>
+<head>
+<style>
+* {
+font-family:Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+</style>
+</head>
+<body>
+<table cellpadding="0" cellspacing="0" class="email-wrapper" style="padding-top:32px;background-color:#ffffff;"><tbody>
+<tr><td>
+<table cellpadding=0 cellspacing=0><tbody>
+<tr><td style="max-width:560px;padding:24px 24px 32px;background-color:#fafafa;border:1px solid #e0e0e0;border-radius:2px">
+<img style="padding:0 24px 16px 0;float:left" width=72 height=72 alt="Error Icon" src="cid:icon.png">
+<table style="min-width:272px;padding-top:8px"><tbody>
+<tr><td><h2 style="font-size:20px;color:#212121;font-weight:bold;margin:0">
+Message not delivered
+</h2></td></tr>
+<tr><td style="padding-top:20px;color:#757575;font-size:16px;font-weight:normal;text-align:left">
+There was a problem delivering your message to <a style='color:#212121;text-decoration:none'><b>joshpaulbakugan@gmial.com</b></a>. See the technical details below.
+</td></tr>
+<tr><td style="padding-top:24px;color:#4285F4;font-size:14px;font-weight:bold;text-align:left">
+<a style="text-decoration:none" href="https://support.google.com/mail/answer/7720">LEARN MORE</a>
+</td></tr>
+</tbody></table>
+</td></tr>
+</tbody></table>
+</td></tr>
+<tr style="border:none;background-color:#fff;font-size:12.8px;width:90%">
+<td align="left" style="padding:48px 10px">
+The response was:<br/>
+<p style="font-family:monospace">
+The recipient server did not accept our requests to connect. Learn more at https://support.google.com/mail/answer/7720
+[gmial.com 54.159.98.68: timed out]
+</p>
+</td>
+</tr>
+</tbody></table>
+</body>
+</html>
+
+--000000000000fbb3c505dba68a48--
+--000000000000fbb3bf05dba68a47
+Content-Type: image/png; name="icon.png"
+Content-Disposition: attachment; filename="icon.png"
+Content-Transfer-Encoding: base64
+Content-ID: <icon.png>
+
+
+--000000000000fbb3bf05dba68a47--
+--000000000000fbacbe05dba68a43
+Content-Type: message/delivery-status
+
+
+--000000000000fbacbe05dba68a43
+Content-Type: message/rfc822
+
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=Vt7DrD6tW/6pmmg5qxb6OJphp3L5kjlzfCD3pfPcWYQ=;
+        b=QxdfDQrqB0qtjtFMN2Q9xrUkjhJ6mtGb76AMnnX5XU9HCfzbbzJyH/YJ4+T+KOGpOQ
+         IsHMpidmsh8Er6B/OfPlW7WpM1vH2xnnMAXAxlOtn1tavXpedEr9ALo0dNF1bb2pQMUA
+         DXYGCLnKm0Ss3j2w0k5Wp2mR9tBCTMUXzaQRCJNtUJzwfPVuiNvuHnodj2Im+r5MGByF
+         dd3gCTf9SUJaZE6LfGFuIxQb5+72pxyu4k1ca1L14mlVUtGi+QvrzGhQ0T/7c5g8WiJA
+         CUDnKfSV25BKhm7wBIRbKHE5PjYLAvMUvhnc2vTP3+d1D0blFiSZLYb1csTb7EEfotju
+         nAlQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=Vt7DrD6tW/6pmmg5qxb6OJphp3L5kjlzfCD3pfPcWYQ=;
+        b=J9lhWJpknjCUdWGinuF1uL+kvSvnWcMKrBt5cIrGNpqvQIO4GcnaF67gh/vCSKNh4Y
+         NUUyYvcDgfhrdclgYMJpFT+wkPsCm0upb/XXQaM9NV6hSzJnfUkMPsN4lvQiVtpzrKiq
+         hKgPkGHfLGf1XZV2fgi2baBiku1X8ymX/dmTcxYMGTeVsmBVRBFZ6dlhmZCqIfdpo5WV
+         FamRsoLe/ybDiviHX6VbwPW8GRe+vybdUvZm3Fyts3ZwOJkmm9iox8Lm+DtX8S9DJTQH
+         aqZ/BJOzXe1TCqIZ8r203x3yjd56Nq8hdhvHSXsyewMGbih0OjOf+cVGR8U/SPqeynUf
+         fLTw==
+X-Gm-Message-State: AOAM530EfDXXzDadnwDJfsxym0erC2C3LXRc/tFCz6mWDakfY1xAgNRp uuWol9r/dN68OcnWFYBqthTThvA5nnAaqUTCf8aZpn4/CnxNL2v5
+X-Google-Smtp-Source: ABdhPJweqqJMLTgB2v3ydKcEuimkvK7+BTxnL49XiEC1XZumQ633c3OH9F9yN+rb3jNYB6pOLVLXgYFQ8dzTwBtbyGw=
+X-Received: by 2002:a17:902:ca94:b0:154:b606:dd83 with SMTP id v20-20020a170902ca9400b00154b606dd83mr33217749pld.167.1648615361733; Tue, 29 Mar 2022 21:42:41 -0700 (PDT)
+MIME-Version: 1.0
+References: <411af087-b9e2-4566-a2b9-fcbb280cb51f@az.southcentralus.production.microsoft.com> <CAKTyU1xb+q5xgorVn-+35kXu_0D2qtmfB8HgQzcwb0kLqJTu8w@mail.gmail.com> <CAKTyU1zYFbrNE2Ry9OKj019i3DJzK6eGsx5qZ3sONvpcs=KCFw@mail.gmail.com>
+In-Reply-To: <CAKTyU1zYFbrNE2Ry9OKj019i3DJzK6eGsx5qZ3sONvpcs=KCFw@mail.gmail.com>
+From: Riju Bhattacharyya <ribh234@gmail.com>
+Date: Wed, 30 Mar 2022 10:12:29 +0530
+Message-ID: <CAKTyU1x9Sj53ru_BUQaWbqZxwG3Vd0PsAfmHF1nVB7cfK-hynA@mail.gmail.com>
+Subject: Fwd: You’ve used 20% of your Azure for Students credit
+To: joshpaulbakugan@gmial.com
+Content-Type: multipart/alternative; boundary="00000000000001e80805db682dd5"
+
+--00000000000001e80805db682dd5
+
+----- Message truncated -----
+--00000000000001e80805db682dd5--
+
+--000000000000fbacbe05dba68a43--

@@ -1,0 +1,105 @@
+Delivered-To: ribh234@gmail.com
+Received: by 2002:a05:7000:2583:0:0:0:0 with SMTP id h3csp650005man;
+        Mon, 11 Apr 2022 18:17:27 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJwYbCOBcGYQ4h+RXMUv8k8zbzr2jZqvaa7KE+2jLH+UCDcQBgP8PhfRz8vtThsdOHdRJTH4
+X-Received: by 2002:a05:6402:438d:b0:419:4550:d52b with SMTP id o13-20020a056402438d00b004194550d52bmr36099491edc.83.1649726247200;
+        Mon, 11 Apr 2022 18:17:27 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1649726247; cv=none;
+        d=google.com; s=arc-20160816;
+        b=H2T5cNMEyC8n9i77rq08o1YlVN+UR1X84geanXkyfa3Nu/WlqmpHw4GNIETOOD3X3H
+         r0pxSLXOyaS4XFfp2/iDE1hOJ5ipNxFWX9ZDplYRUWLjmgY2m8rcIM4FzGb5S9I1SQ22
+         /3MCDmEPGPeVS9qDvWlMgXNGjBBrGPzT5CRo+zQAA+fQDq2FHzF4Ktk1Vvz1VHRC2gu5
+         RAovil72YOPpPy2vyxJJhGuRbC7k9PfHkfPM3P7VdIa4aEbedSFt3egvpjFOBtdtk3xf
+         GXgomrJcTqzjR/84utAOcVXpJumHkXaZ5emsFbuvUVl7dCYiO0N/lOB+hkO6WzBLnV+k
+         Y0NQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=message-id:mime-version:feedback-id:errors-to:reply-to:from:subject
+         :to:date:dkim-signature;
+        bh=moINHFK/+n+AyYrJa/aBNTgnMh5ZtOz6sftvVox990Q=;
+        b=JQpIM7VHw8gjRmrQXoreJBh/batrNcnA2fiSg6c4lZRAiBT7t77KJktbcxZ6Cy6oZp
+         vxwK9/qOtmkNAVOKhcFNGE3kEm6mxEPu37CcTLad0m5K3+O3d8qLQ8ym8nJaW8JE9sgI
+         XoEwFIuHW/3b8TXLKkV47mF2LgLqUJAQP2R8+4VlyZzd+vMCNdsvTGotF0EW+raDSgn9
+         RQOfrPMtkknajbUrOL8lqxbF5kvW7k10eRsz+hz0diKDHc0UyjBTjIFoCE3vvUQbeZR1
+         mynp0RlSw233qWSqDXueoUC7zKlNWkMjiWE4qxFBPP0y2ywONIZGk3W8DTkpq3YcqwVP
+         gmnw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@facebookmail.com header.s=s1024-2013-q3 header.b="jaEB9/JM";
+       spf=pass (google.com: domain of security@facebookmail.com designates 66.220.155.144 as permitted sender) smtp.mailfrom=security@facebookmail.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=facebookmail.com
+Return-Path: <security@facebookmail.com>
+Received: from 66-220-155-144.mail-mail.facebook.com (66-220-155-144.mail-mail.facebook.com. [66.220.155.144])
+        by mx.google.com with ESMTPS id t11-20020a17090605cb00b006df76385e22si7555713ejt.706.2022.04.11.18.17.26
+        for <ribh234@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Mon, 11 Apr 2022 18:17:27 -0700 (PDT)
+Received-SPF: pass (google.com: domain of security@facebookmail.com designates 66.220.155.144 as permitted sender) client-ip=66.220.155.144;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@facebookmail.com header.s=s1024-2013-q3 header.b="jaEB9/JM";
+       spf=pass (google.com: domain of security@facebookmail.com designates 66.220.155.144 as permitted sender) smtp.mailfrom=security@facebookmail.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=facebookmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=facebookmail.com; s=s1024-2013-q3; t=1649726239; bh=6SQ6WLWejED8BB6//ChFzo6Nqp+4PN07DUan7iZxMf8=; h=Date:To:Subject:From:MIME-Version:Content-Type; b=jaEB9/JMOJ/pFnrzxXXqDG8FFOVUsknMGCadn0XYZ6B7L0gOEqAR/fduW6IkL+LUn
+	 A8c4/MNU63yHT7C3Ph3l0zi49h2zlMaFNu5T3C1AmEmReWb2e1EU9s2EMn92sGNtvt
+	 qA92uoMBQuAt7N3nm5W1bPvHA8aBP1RdBhicNy24=
+X-Facebook: from 2401:db00:3220:9199:face:0:20:0 ([MTI3LjAuMC4x]) by www.facebook.com with HTTPS (ZuckMail);
+Date: Mon, 11 Apr 2022 18:17:19 -0700
+To: Riju Bhattacharyya <ribh234@gmail.com>
+Subject: Facebook password reset
+X-Priority: 3
+X-Mailer: ZuckMail [version 1.00]
+Return-Path: security@facebookmail.com
+From: Facebook <security@facebookmail.com>
+Reply-to: noreply <noreply@facebookmail.com>
+Errors-To: security@facebookmail.com
+X-Facebook-Notify: password_changed; mailid=U1U5dc6a88da5f70G5af53c3ecfc3G5dc6ad2706242G18e
+Feedback-ID: 0:password_changed:Facebook
+X-FACEBOOK-PRIORITY: 0
+X-Auto-Response-Suppress: All
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="b1_aeca89f6eecb7191a12137a5e6b4ecaf"
+Message-ID: <4c5f75ec-b9fe-11ec-821c-1d05de2e6a63@facebookmail.com>
+
+--b1_aeca89f6eecb7191a12137a5e6b4ecaf
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Riju,
+
+Hi Riju,
+
+Your Facebook password was reset on Tuesday, 12 April 2022 at 06:47 (UTC+05=
+:30).=C2=A0
+
+  Device: 6T
+  IP address: 103.24.60.14
+
+
+If you did this, you can safely disregard this email.=20
+
+If you didn't do this, please secure your account at https://www.facebook.c=
+om/hacked/disavow?u=3D100009324236739&n=3D7PbwHNES&l=3Den_GB&ext=3D16503310=
+39&hash=3DAS-PBlHYtJFPnE-HaPc
+
+Thanks,
+The Facebook Security Team
+
+=C2=A0
+
+Thanks,
+The Facebook team
+
+
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+This message was sent to ribh234@gmail.com at your request.
+Meta Platforms, Inc., Attention: Community Support, 1 Facebook Way, Menlo P=
+ark, CA 94025
+To help keep your account secure, please don't forward this email. Follow t=
+he link below to learn more.
+https://www.facebook.com/email_forward_notice/?mid=3D5dc6a88da5f70G5af53c3e=
+cfc3G5dc6ad2706242G18e
+
+
+--b1_aeca89f6eecb7191a12137a5e6b4ecaf
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
