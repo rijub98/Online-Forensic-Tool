@@ -1,5 +1,3 @@
-Read Me:
-
 1. Python 3.10 - Download from Microsoft Store not python website
 
 2. Upgrade pip:
