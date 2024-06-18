@@ -1,0 +1,66 @@
+<keras.engine.input_layer.InputLayer object at 0x7fe1341d7c10> False
+<keras.layers.convolutional.Conv2D object at 0x7fe12af56310> False
+<keras.layers.convolutional.Conv2D object at 0x7fe12af56410> False
+<keras.layers.pooling.MaxPooling2D object at 0x7fe100f0c210> False
+<keras.layers.convolutional.Conv2D object at 0x7fe100f18b50> False
+<keras.layers.convolutional.Conv2D object at 0x7fe100f1cb50> False
+<keras.layers.pooling.MaxPooling2D object at 0x7fe12a698d50> False
+<keras.layers.convolutional.Conv2D object at 0x7fe100f271d0> False
+<keras.layers.convolutional.Conv2D object at 0x7fe100f2e310> False
+<keras.layers.convolutional.Conv2D object at 0x7fe100f22c10> False
+<keras.layers.pooling.MaxPooling2D object at 0x7fe100eb8910> False
+<keras.layers.convolutional.Conv2D object at 0x7fe100ebb850> False
+<keras.layers.convolutional.Conv2D object at 0x7fe100ebfc50> False
+<keras.layers.convolutional.Conv2D object at 0x7fe100eb35d0> False
+<keras.layers.pooling.MaxPooling2D object at 0x7fe100ecd4d0> True
+<keras.layers.convolutional.Conv2D object at 0x7fe100ed0e10> True
+<keras.layers.convolutional.Conv2D object at 0x7fe100ecd150> True
+<keras.layers.convolutional.Conv2D object at 0x7fe100ed7f50> True
+<keras.layers.pooling.MaxPooling2D object at 0x7fe100ee66d0> True
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ vgg16 (Functional)          (None, 4, 4, 512)         14714688  
+                                                                 
+ flatten (Flatten)           (None, 8192)              0         
+                                                                 
+ dense (Dense)               (None, 1024)              8389632   
+                                                                 
+ dropout (Dropout)           (None, 1024)              0         
+                                                                 
+ dense_1 (Dense)             (None, 2)                 2050      
+                                                                 
+=================================================================
+Total params: 23,106,370
+Trainable params: 15,471,106
+Non-trainable params: 7,635,264
+_________________________________________________________________
+Epoch 1/14
+2018/2018 - 22s - loss: 0.6604 - accuracy: 0.6211 - val_loss: 0.6459 - val_accuracy: 0.6554 - 22s/epoch - 61ms/step
+Epoch 2/14
+2018/2018 - 21s - loss: 0.6454 - accuracy: 0.6498 - val_loss: 0.6123 - val_accuracy: 0.6779 - 21s/epoch - 59ms/step
+Epoch 3/14
+2018/2018 - 21s - loss: 0.6278 - accuracy: 0.6836 - val_loss: 0.6301 - val_accuracy: 0.7342 - 21s/epoch - 59ms/step
+Epoch 4/14
+2018/2018 - 21s - loss: 0.5796 - accuracy: 0.7123 - val_loss: 0.5309 - val_accuracy: 0.7432 - 21s/epoch - 59ms/step
+Epoch 5/14
+2018/2018 - 21s - loss: 0.4977 - accuracy: 0.7708 - val_loss: 0.4643 - val_accuracy: 0.7815 - 21s/epoch - 59ms/step
+Epoch 6/14
+2018/2018 - 22s - loss: 0.4251 - accuracy: 0.8255 - val_loss: 0.5239 - val_accuracy: 0.7748 - 22s/epoch - 61ms/step
+Epoch 7/14
+2018/2018 - 21s - loss: 0.3155 - accuracy: 0.8812 - val_loss: 0.3407 - val_accuracy: 0.8491 - 21s/epoch - 59ms/step
+Epoch 8/14
+2018/2018 - 21s - loss: 0.2273 - accuracy: 0.9347 - val_loss: 0.2722 - val_accuracy: 0.9234 - 21s/epoch - 59ms/step
+Epoch 9/14
+2018/2018 - 21s - loss: 0.1895 - accuracy: 0.9476 - val_loss: 0.2312 - val_accuracy: 0.9437 - 21s/epoch - 59ms/step
+Epoch 10/14
+2018/2018 - 21s - loss: 0.1650 - accuracy: 0.9510 - val_loss: 0.2762 - val_accuracy: 0.9054 - 21s/epoch - 59ms/step
+Epoch 11/14
+2018/2018 - 21s - loss: 0.1718 - accuracy: 0.9516 - val_loss: 0.2799 - val_accuracy: 0.9032 - 21s/epoch - 59ms/step
+Epoch 12/14
+2018/2018 - 21s - loss: 0.1393 - accuracy: 0.9640 - val_loss: 0.2906 - val_accuracy: 0.9392 - 21s/epoch - 59ms/step
+Epoch 13/14
+2018/2018 - 21s - loss: 0.1334 - accuracy: 0.9662 - val_loss: 0.2336 - val_accuracy: 0.9527 - 21s/epoch - 58ms/step
+Epoch 14/14
+2018/2018 - 21s - loss: 0.1296 - accuracy: 0.9696 - val_loss: 0.2281 - val_accuracy: 0.9324 - 21s/epoch - 60ms/step
