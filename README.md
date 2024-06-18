@@ -39,3 +39,6 @@
 
 13. Exif install:
     https://exiftool.org/install.html
+
+14. Trained Data Sets are avaialable in Google Drive Link: 
+    https://drive.google.com/file/d/1t3bMy1G85O5bVr4pfBwQxCioe3IHjaVg/view?usp=drive_link
