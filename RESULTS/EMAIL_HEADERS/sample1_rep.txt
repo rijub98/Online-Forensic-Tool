@@ -1,0 +1,49 @@
+Email traceback path timestamp: Pass
+Email Protocol Verification: Pass
+
+----------------------------------
+Mail Transit Timestamps:
+----------------------------------
+Sent timestamp:        2022-04-20 10:34:20+00:00
+Received timestamp: 2022-04-20 03:34:20-07:00
+
+
+-----------------
+Message-ID:
+-----------------
+0100018046898925-8164b9a9-06d4-4c4b-9c82-b466a9a9cded-000000@email.amazonses.com
+
+----------
+From:
+----------
+"Rima | CodeChef" <colleges@codechef.com>
+
+----------
+To:
+----------
+Rosanne Fernando <20180121.rosannefjs@student.xavier.ac.in>
+
+----------
+Subject:
+----------
+Action Required - Verify Your Account
+
+--------------------
+MIME-Version:
+--------------------
+1.0
+
+---------------------
+DKIM-Signature:
+---------------------
+v=1;a=rsa-sha256;q=dns/txt;c=relaxed/simple;s=hp5tdafxqwemqyeismzjya5pkdphro2u;d=codechef.com;t=1650450860;h=Date:To:From:Reply-To:Subject:Message-ID:List-Unsubscribe:MIME-Version:Content-Type:Content-Transfer-Encoding;bh=xICMUFZj9bULDzNqPFX9FThzxLlsWHHPZd46+YLXzK4=;b=UD76ubbBW0qPt4Sm/ueHx+P92z64O/XytWYGtv4fj/I4puc6AqmlilCLCvgJ6//mPn+uRDl+EkMAEoo//Cb5n9u3ZqMC7TtO9Qht3GeawUvly1Zf97xlzhiTqQkrlYo0s5sNk1tESP2zmW4AVpN/d5YcBcsL0NpRwFlIkpeStXY=<br>','DKIM-Signature:v=1;a=rsa-sha256;q=dns/txt;c=relaxed/simple;s=6gbrjpgwjskckoa6a5zn6fwqkn67xbtw;d=amazonses.com;t=1650450860;h=Date:To:From:Reply-To:Subject:Message-ID:List-Unsubscribe:MIME-Version:Content-Type:Content-Transfer-Encoding:Feedback-ID;bh=xICMUFZj9bULDzNqPFX9FThzxLlsWHHPZd46+YLXzK4=;b=ls57rQphKqozFV2tkxOmSOYShVhLhCvY7j4NmtP+d5ZNYhDDX8Vjf0ZYF7bCskhsZWNKjWVstffA9wDmoCiUJHgVZH3ovIyndZI0cp5wX6fcdkTzFQDpkViZCCENhHwRhzOTdpFyBEuszlwtPc4yFsL+w72SDkgGxfYN7J9ZBaI=
+
+-----------------
+Received by:
+-----------------
+2002:aa7:db8d:0:b0:419:dfaf:bb20 with SMTP id u13csp2373456edt
+
+-----------------
+Return-Path:
+-----------------
+0100018046898925-8164b9a9-06d4-4c4b-9c82-b466a9a9cded-000000@amazonses.com

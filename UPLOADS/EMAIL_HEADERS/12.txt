@@ -1,0 +1,62 @@
+Delivered-To: ribh234@gmail.com
+Received: by 2002:a05:6a10:618d:0:0:0:0 with SMTP id y13csp1183722pxb;
+        Tue, 8 Feb 2022 21:24:15 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJyV+dcoA+6dTCN9LBsAPCSYWwV+kp76eocv21i03h0BD2v1B6tHVs7PKCyH79NDkhUGGCyl
+X-Received: by 2002:a17:902:f551:: with SMTP id h17mr842571plf.72.1644384255466;
+        Tue, 08 Feb 2022 21:24:15 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1644384255; cv=none;
+        d=google.com; s=arc-20160816;
+        b=sRQAzmP+6VmQgB7lKqQNi/3KniOOwc9mcVMfFMlvG4QbneCyhfOnDraCGeAU2zeQzu
+         iBvIR9VUAexrJSZ27n7/txAVwpwfBdO0+jxrNcfDcJ578g0hOXxwwNnWawgcsMs76F9h
+         tXg9JoK1JkHKENLc/S+9VLRpuhHc7cL5C5o7SZ1qc444hXg0ccNl4GM722Eth0yT1nQn
+         vBITaVt+VQctWTVz+lxhc0L5FUcERayT9fbsYAAd4drAxUY6c6x+sIfABwv7rTgaeo/w
+         NgEcMYTnOoQZ/vWg8o6CNjPyjcoTgHczoDIlcYr8xpBfn6sASU6PWXZXpq554sgr8bZD
+         sqAA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:mime-version:from:date:dkim-signature
+         :dkim-signature;
+        bh=shr1KdqNIe2NrNROrKE773KEYt+yWkr2BOkfh4kkh1g=;
+        b=YtHoT/xA/DfosHfsPqlBv3Ct2sLXwwGktGmXKvu7ptwOf2bZtYv8nyk9LIOXnN9en7
+         LCOwxeaP5EJ3lSE78mMW8YuCUfTvlgVeDcoDGNTK+uwGXwAPGybOQSBosDOhMw4KL+pG
+         r1dvUkn1wvkIbKXmWxokzDIcXNeWzzJu0snBbG+tD8SEBx/qaM6tq95VmOQzyMe9QMV/
+         IGG6Vogbche3+ifjFBFtHhKwG6/aFjeqnFsHhAZZudZBieM+qxR5ysoNXVsnMIFuxiat
+         68Ac5VFH+p+nB1w/zx2Dam+b1v+IK5WrsnTdvtjKsa+Xsy/Gg1SxGbPnBX5pYHD0XM7X
+         MZEA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@spotify.com header.s=s1 header.b=LsOtUPNR;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b="dCgv/jaX";
+       spf=pass (google.com: domain of bounces+15080943-5f91-ribh234=gmail.com@em.spotify.com designates 149.72.241.206 as permitted sender) smtp.mailfrom="bounces+15080943-5f91-ribh234=gmail.com@em.spotify.com";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=spotify.com
+Return-Path: <bounces+15080943-5f91-ribh234=gmail.com@em.spotify.com>
+Received: from o26.em.spotify.com (o26.em.spotify.com. [149.72.241.206])
+        by mx.google.com with ESMTPS id d2si1637796pfr.362.2022.02.08.21.24.15
+        for <ribh234@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Tue, 08 Feb 2022 21:24:15 -0800 (PST)
+Received-SPF: pass (google.com: domain of bounces+15080943-5f91-ribh234=gmail.com@em.spotify.com designates 149.72.241.206 as permitted sender) client-ip=149.72.241.206;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@spotify.com header.s=s1 header.b=LsOtUPNR;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b="dCgv/jaX";
+       spf=pass (google.com: domain of bounces+15080943-5f91-ribh234=gmail.com@em.spotify.com designates 149.72.241.206 as permitted sender) smtp.mailfrom="bounces+15080943-5f91-ribh234=gmail.com@em.spotify.com";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=spotify.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=spotify.com; h=content-type:from:mime-version:subject:x-feedback-id:to; s=s1; bh=shr1KdqNIe2NrNROrKE773KEYt+yWkr2BOkfh4kkh1g=; b=LsOtUPNR6+bDSNYF1W2AaIre/Z3GtcZU1FYoCGojQgdXUqrBEn6hoO3PHEXJp041aCwi +w0EnqSaeaLeuTTr98ECPZTFWGojShrJEbE5dqMV/roiklNrd2PLhfW/mckQ2QsOr4eWFf kNSMdCvlhNAjOP6aZr61K6OyyTNa9rYDaMzO9EdPHO6XwUEszv5CsizlY2z8ICAFC/NSav 8wLHEetb/DsegduEKA07B7aBcDnjX2VyXkUWTnhuUxO5WRHcGvfz2yXvkYjGil9jD4uvUi brqVxRB1I6w5CTuFQJMrOLxm4zcD4hw6dfiwrbD0msTvxFiag5/idw/V3Njo2ULw==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.info; h=content-type:from:mime-version:subject:x-feedback-id:to; s=smtpapi; bh=shr1KdqNIe2NrNROrKE773KEYt+yWkr2BOkfh4kkh1g=; b=dCgv/jaXl5tXlU5AvEPDKBrs9l/YoSmsMg87XzyaGxZNMfCNHRHK3rLxggwaMupOGc8M /fhSFizgPdgdIdTZSGHzEqP6reLNBj1G5s75evpb5tPmDg3CrQYEPgBIiqvI0+kQSrH6OH hOqg7ydaF2gxkmzlMiemKbZH0e3ppKwqE=
+Received: by filterdrecv-6d9d86b776-xsmnm with SMTP id filterdrecv-6d9d86b776-xsmnm-1-62034FFE-2D
+        2022-02-09 05:24:14.759830555 +0000 UTC m=+13849398.316283317
+Received: from MTUwODA5NDM (unknown) by geopod-ismtpd-3-0 (SG) with HTTP id ydVhZzIQSVq0CwjAF8qebQ Wed, 09 Feb 2022 05:24:14.471 +0000 (UTC)
+Content-Type: multipart/alternative; boundary=08a5450fee70b074c91772b863679ad9589e7f32dc91d04ceb127ef29720
+Date: Wed, 09 Feb 2022 05:24:14 +0000 (UTC)
+From: Spotify <no-reply@spotify.com>
+Mime-Version: 1.0
+Message-ID: <ydVhZzIQSVq0CwjAF8qebQ@geopod-ismtpd-3-0>
+Subject: New login to Spotify
+X-Feedback-ID: 15080943:SG
+X-SG-EID: 0C9L/eBRtgYa/F8y6aOTnwpGIngFWQ11NoR8o2fvCVMN9thUS8ZNdG1JBR+Ynp5TqR0Hpm2LFUl/BnY7BDTNZVeKIfd/PA+hCMV9mvpQhmZl3HnIHP3m8YNhZpiYeKCaBjY1Q9K7oVrQGo8Zi+fwDuxaLRf1qLgkUpEoBqDdIxklIaUy+P0asT7bNz9qENKHarNwtqmk9WJ2Flnw/Hx6Vll+/asEUriliCQ7Gt3GNef2b4rbiCqaaDgX1+9h9v8n
+X-SG-ID: N2C25iY2uzGMFz6rgvQsb9RSUyB3ulQmM+qUWzaIEKo8nc7bFv0DBNR0nzHJV5pn0cQ/L5SoLtnP7WhRrglyh5olKqdiC337jZS6MXLny7LNMvbTjDjaF6RwKr+Kz0LEddbGYyUbzxVjgI78lecH7ROu7icHtvCl38TDpZ39pk5MQOgevoe5CWIl1KIzYtL4fTb/rA1+JiT/hiMgQ5XsgQnrmX96ohq1quzyarpIyWxNk7FPrHjS14OwH+onD7HvgYi3HtmAReL8JzeUaMcQCS/yj9Dq5D96/YpAUr1tiptCYVKrnuQ4lWbn/gCNlKjBbF+y3Evs5FDoRaIGDo0Ci26FwgQElzQaL1sGETOeE1U=
+To: ribh234@gmail.com
+X-Entity-ID: vCoNoJhSrZfUTgxwuPCBqA==
+
+--08a5450fee70b074c91772b863679ad9589e7f32dc91d04ceb127ef29720
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+Mime-Version: 1.0

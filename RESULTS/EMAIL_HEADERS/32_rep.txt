@@ -1,0 +1,47 @@
+Email traceback path timestamp: Pass
+Email Protocol Verification: Pass
+
+----------------------------------
+Mail Transit Timestamps:
+----------------------------------
+Sent timestamp:        2022-03-03 11:36:55+05:30
+
+
+-----------------
+Message-ID:
+-----------------
+CAKTyU1zMJ1gaznUVTtH2s33S=hUJPft40CBwmKWSysXfL1H+KA@mail.gmail.com
+
+----------
+From:
+----------
+Riju Bhattacharyya <ribh234@gmail.com>
+
+----------
+To:
+----------
+teena.v@xavier.ac.in
+
+----------
+Subject:
+----------
+DC Assignment
+
+--------------------
+MIME-Version:
+--------------------
+1.0
+
+---------------------
+DKIM-Signature:
+---------------------
+
+
+-----------------
+Received by:
+-----------------
+
+
+-----------------
+Return-Path:
+-----------------

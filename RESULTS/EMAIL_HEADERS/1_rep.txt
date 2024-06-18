@@ -1,0 +1,47 @@
+Email traceback path timestamp: Pass
+Email Protocol Verification: Pass
+
+----------------------------------
+Mail Transit Timestamps:
+----------------------------------
+Sent timestamp:        2022-02-17 20:31:38+05:30
+
+
+-----------------
+Message-ID:
+-----------------
+CAKTyU1ym-jKDHQXvaeH_tRZCU2J9Bg9YENAqvhFD5C=zjR1ZGg@mail.gmail.com
+
+----------
+From:
+----------
+Riju Bhattacharyya <ribh234@gmail.com>
+
+----------
+To:
+----------
+Riju Bhattacharyya <ribh234@gmail.com>
+
+----------
+Subject:
+----------
+
+
+--------------------
+MIME-Version:
+--------------------
+1.0
+
+---------------------
+DKIM-Signature:
+---------------------
+
+
+-----------------
+Received by:
+-----------------
+
+
+-----------------
+Return-Path:
+-----------------

@@ -1,0 +1,47 @@
+Email traceback path timestamp: Pass
+Email Protocol Verification: Pass
+
+----------------------------------
+Mail Transit Timestamps:
+----------------------------------
+Sent timestamp:        2022-02-27 18:36:12+05:30
+
+
+-----------------
+Message-ID:
+-----------------
+CAKTyU1xb+q5xgorVn-+35kXu_0D2qtmfB8HgQzcwb0kLqJTu8w@mail.gmail.com
+
+----------
+From:
+----------
+Riju Bhattacharyya <ribh234@gmail.com>
+
+----------
+To:
+----------
+nikshitashetty23@gmail.com
+
+----------
+Subject:
+----------
+Fwd: You’ve used 20% of your Azure for Students credit
+
+--------------------
+MIME-Version:
+--------------------
+1.0
+
+---------------------
+DKIM-Signature:
+---------------------
+
+
+-----------------
+Received by:
+-----------------
+
+
+-----------------
+Return-Path:
+-----------------

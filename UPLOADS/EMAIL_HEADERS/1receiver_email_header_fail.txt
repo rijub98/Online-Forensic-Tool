@@ -1,0 +1,79 @@
+Delivered-To: ribh234@gmail.com
+Received: by 2002:aa7:da52:0:0:0:0:0 with SMTP id w18csp4347096eds;
+        Sat, 06 Nov 2021 19:36:33 -0700 (PDT)
+X-Received: by 2002:a05:6512:31c9:: with SMTP id j9mr61707119lfe.395.1636252593795;
+        Sat, 06 Nov 2021 19:36:33 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1636252593; cv=none;
+        d=google.com; s=arc-20160816;
+        b=zG33tk2Ep9WpjrjQwc2jgNdHcvuMMRhvkK3uO/KEUet8ByrXfL1ArnPBujZhtPdnt0
+         H8g0dK6PDTh1A+txBuBKi2sgquxQot8DLOocWCrkdBD2EpRTpV65oN7rRTd2KVxiswEU
+         Hi6vqtPsqL6yqENQ31RFXDfFFPo30znPwXRzm80Gc0Mm2EYklelRVjOnftupE/VnzJOf
+         4fTgqu2ILzB8YqhUV7lbXLZK4N1u3mRvA1m3OEggDHKuSXetnJl0KZBNLfaft+nGnZCh
+         BXPSDqT/cbUPJF87C71eOJFCCfgAgbrkbi9dRKXrDbbuQCatqNdyTftO9Lm5ntYuwBiA
+         Lx1w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=dq5jEYofQAcA2Jpg3S0+w7Z9QSAABQ2HGGBY5n2mqMM=;
+        b=KYw/0UharRfrmxC0eIGnvLlDMmO42xHHiq1urKs5lw7gPDAqXmSWZdlPGV2kZ5m8qD
+         kleCIQpoUc4ZEKXfBdhg35ZZseNyXzFr1uzR9l/HXVlbUNNDSxddQBMMvUy0K9PaYmu0
+         qYaWkjt8UA5SwNm97UFqF/YaAXyCZKn5w2BaJTmdI+GYWU5hWNxamGPOusFcXnqz/sLl
+         FPWKehbCvUDo6sbQXd/nwqovRn7Fyd3J/IRdDHuSX9wYUIz/k9oOed+uTrx6OeguDNoq
+         Ooj4tpg9voy5yiJuQuH9+Z3QJZ0z8aNYA8g5D39zunCdr/HuaeXJ7xbGIHz8I88JKvgE
+         qRxg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=Tr4Myq3v;
+       spf=pass (google.com: domain of riju994@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=riju994@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <riju994@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id o7sor3012451lfk.37.2021.11.06.19.36.33
+        for <ribh234@gmail.com>
+        (Google Transport Security);
+        Sat, 06 Nov 2021 19:36:30 -0700 (PDT)
+Received-SPF: pass (google.com: domain of riju994@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=Tr4Myq3v;
+       spf=pass (google.com: domain of riju994@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=riju994@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=dq5jEYofQAcA2Jpg3S0+w7Z9QSAABQ2HGGBY5n2mqMM=;
+        b=Tr4Myq3vKPouEBLKJYpkEmS7kgH8+MbbHMYOlPCveOaw6E3lPAAGpAjIHFO4Oby3jv
+         OjOTVEEHDycKx0c66rc0zrMtUJnNwLM25H98acd7zUTxrGGlD2KhtadOd/x6zTAP8731
+         2aiQMhOGO3ovJpR0cM2/enRixfffYMdJdZ7W5IM6/CMf8RVJVjKDDtXqX2Eh9Enb5mR2
+         nBY/XXsZ3RkkyCc+NyLwgVCw6PuUDgqr9+1HmY31oZFMYIeNLLeyAlAWJIDGDU/0K7cp
+         5wexW7w2rp8B+d8im8Eb+G7bPuO/tm99dpkrkDvP2kh8TfU4kqJxql8aTvtL++SN25P2
+         3Wcg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=dq5jEYofQAcA2Jpg3S0+w7Z9QSAABQ2HGGBY5n2mqMM=;
+        b=ehnWGLVVLoAgr1tnZsA/XfvzjJUORs5KQkTIV/GrQq9AC3D/ABtwDqtdCH8hyZ5Czw
+         sTmgFOBRFJXKUHh+Ym9ioJSzV5F+bZM2Jgu6F/KQeNQFaNVmrt4oE8KJsNbuMJ5aU0ca
+         MkoYwbL4/S+MSKakyBdvdbY1jEB6YGwgsy4fx/yXrXgkS2nJKPzYNrTZDLdTbFF+gR0Y
+         aVR20nLI+Y6XCP0ctQEzl4Yu02JVXafhOHDpqTFO4GCm3ijQoblNr5WxCmi65bn0wz61
+         ERvwMPW4ZnSBpEv0x488HvOKRDPs2MLyeh8Gku/uSjrugsXdpIdWRn9PtkGobllZwLB9
+         iG8g==
+X-Gm-Message-State: AOAM532K1zxWT6Jk7DwZG5H16wJQlKBP6Kcysu+TLShxHFXCNYDKaqds 6oO5DTCLmSOyQMtuHAIHQfqCqe7U924/NweMGtp4KKU3Ghk=
+X-Google-Smtp-Source: ABdhPJxNZsrBRFOgA01S6KQUOIEStpBuEQ3wveng7Mw09FsfXh9TzUu1HSpJeH8bBxVUoyJARtg9iMioQQbwaRXDW/0=
+X-Received: by 2002:a05:6512:449:: with SMTP id y9mr1304032lfk.609.1636252592945; Sat, 06 Nov 2021 19:36:32 -0700 (PDT)
+MIME-Version: 1.0
+From: Riju Bhattacharyya <riju994@gmail.com>
+Date: Sat, 6 Nov 2021 22:39:19 -0400
+Message-ID: <CAH3TmF+abdmc3BkjdKkj-3urt90674G4kuEWgnEDQ6nSVuKOmg@mail.gmail.com>
+Subject: Test email
+To: ribh234@gmail.com
+Content-Type: multipart/alternative; boundary="00000000000090bed105d029be83"
+
+--00000000000090bed105d029be83
+Content-Type: text/plain; charset="UTF-8"
+
+test
+
+--00000000000090bed105d029be83
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="ltr">test<br></div>
+
+--00000000000090bed105d029be83--
