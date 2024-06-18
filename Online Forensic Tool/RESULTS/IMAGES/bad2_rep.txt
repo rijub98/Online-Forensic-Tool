@@ -1,0 +1,37 @@
+===========================================
+Overall Image Manipulation Prediction Result:
+===========================================
+
+Overall Authentic probability: 8.93%
+Overall Tampered probability:  91.07%
+
+Verdict:   Most likely tampered
+
+
+===================================
+LSB Stegnography decoder analysis result:
+===================================
+
+-----------------------------------------------------
+Did not detect any encoded message
+-----------------------------------------------------
+
+=========================================
+ELA based Authentication Prediction Result:
+=========================================
+
+Authentic probability: 1.4%
+Tampered probability:  98.6%
+
+============================================
+Mean Noise based Authentication Prediction Result:
+============================================
+
+Authentic probability: 16.46%
+Tampered probability:  83.54%
+
+==============
+Image Metadata:
+==============
+
+<!-- ../UPLOADS/IMAGES/bad2.png --><table><tr><td>ExifTool Version Number</td><td>12.40</td></tr><tr><td>File Name</td><td>bad2.png</td></tr><tr><td>Directory</td><td>../UPLOADS/IMAGES</td></tr><tr><td>File Size</td><td>152 KiB</td></tr><tr><td>File Modification Date/Time</td><td>2022:02:25 18:15:57+05:30</td></tr><tr><td>File Access Date/Time</td><td>2022:02:25 18:16:04+05:30</td></tr><tr><td>File Creation Date/Time</td><td>2022:02:25 18:15:57+05:30</td></tr><tr><td>File Permissions</td><td>-rw-rw-rw-</td></tr><tr><td>File Type</td><td>PNG</td></tr><tr><td>File Type Extension</td><td>png</td></tr><tr><td>MIME Type</td><td>image/png</td></tr><tr><td>Image Width</td><td>384</td></tr><tr><td>Image Height</td><td>256</td></tr><tr><td>Bit Depth</td><td>8</td></tr><tr><td>Color Type</td><td>RGB</td></tr><tr><td>Compression</td><td>Deflate/Inflate</td></tr><tr><td>Filter</td><td>Adaptive</td></tr><tr><td>Interlace</td><td>Noninterlaced</td></tr><tr><td>Image Size</td><td>384x256</td></tr><tr><td>Megapixels</td><td>0.098</td></tr></table>

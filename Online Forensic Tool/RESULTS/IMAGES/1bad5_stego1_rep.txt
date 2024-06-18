@@ -1,0 +1,39 @@
+===========================================
+Overall Image Manipulation Prediction Result:
+===========================================
+
+Overall Authentic probability: 0.0%
+Overall Tampered probability:  100.0%
+
+Verdict:   Most likely tampered
+
+
+===================================
+LSB Stegnography decoder analysis result:
+===================================
+
+-----------------------------------
+Encoded message found:
+-----------------------------------
+
+Can you find me?
+
+=========================================
+ELA based Authentication Prediction Result:
+=========================================
+
+Authentic probability: 8.32%
+Tampered probability:  91.68%
+
+============================================
+Mean Noise based Authentication Prediction Result:
+============================================
+
+Authentic probability: 17.77%
+Tampered probability:  82.23%
+
+==============
+Image Metadata:
+==============
+
+<!-- ../UPLOADS/IMAGES/1bad5_stego1.png --><table><tr><td>ExifTool Version Number</td><td>12.40</td></tr><tr><td>File Name</td><td>1bad5_stego1.png</td></tr><tr><td>Directory</td><td>../UPLOADS/IMAGES</td></tr><tr><td>File Size</td><td>208 KiB</td></tr><tr><td>File Modification Date/Time</td><td>2022:04:22 10:21:37+05:30</td></tr><tr><td>File Access Date/Time</td><td>2022:04:22 10:22:03+05:30</td></tr><tr><td>File Creation Date/Time</td><td>2022:04:22 10:21:37+05:30</td></tr><tr><td>File Permissions</td><td>-rw-rw-rw-</td></tr><tr><td>File Type</td><td>PNG</td></tr><tr><td>File Type Extension</td><td>png</td></tr><tr><td>MIME Type</td><td>image/png</td></tr><tr><td>Image Width</td><td>450</td></tr><tr><td>Image Height</td><td>321</td></tr><tr><td>Bit Depth</td><td>8</td></tr><tr><td>Color Type</td><td>RGB</td></tr><tr><td>Compression</td><td>Deflate/Inflate</td></tr><tr><td>Filter</td><td>Adaptive</td></tr><tr><td>Interlace</td><td>Noninterlaced</td></tr><tr><td>Image Size</td><td>450x321</td></tr><tr><td>Megapixels</td><td>0.144</td></tr></table>

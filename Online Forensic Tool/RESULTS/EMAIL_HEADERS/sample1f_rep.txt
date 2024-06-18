@@ -1,0 +1,49 @@
+Email traceback path timestamp: Pass
+Email Protocol Verification: Pass
+
+----------------------------------
+Mail Transit Timestamps:
+----------------------------------
+Sent timestamp:        2022-04-11 18:17:19-07:00
+Received timestamp: 2022-04-11 18:17:27-07:00
+
+
+-----------------
+Message-ID:
+-----------------
+4c5f75ec-b9fe-11ec-821c-1d05de2e6a63@facebookmail.com>\n--b1_aeca89f6eecb7191a12137a5e6b4eca
+
+----------
+From:
+----------
+Facebook <security@facebookmail.com>
+
+----------
+To:
+----------
+Riju Bhattacharyya <ribh234@gmail.com>
+
+----------
+Subject:
+----------
+Facebook password reset
+
+--------------------
+MIME-Version:
+--------------------
+1.0
+
+---------------------
+DKIM-Signature:
+---------------------
+v=1;a=rsa-sha256;c=relaxed/simple;d=facebookmail.com;s=s1024-2013-q3;t=1649726239;bh=6SQ6WLWejED8BB6//ChFzo6Nqp+4PN07DUan7iZxMf8=;h=Date:To:Subject:From:MIME-Version:Content-Type;b=jaEB9/JMOJ/pFnrzxXXqDG8FFOVUsknMGCadn0XYZ6B7L0gOEqAR/fduW6IkL+LUn<br>\tA8c4/MNU63yHT7C3Ph3l0zi49h2zlMaFNu5T3C1AmEmReWb2e1EU9s2EMn92sGNtvt<br>\tqA92uoMBQuAt7N3nm5W1bPvHA8aBP1RdBhicNy24=
+
+-----------------
+Received by:
+-----------------
+2002:a05:7000:2583:0:0:0:0 with SMTP id h3csp650005man
+
+-----------------
+Return-Path:
+-----------------
+security@facebookmail.com>\n', 'Return-Path: security@facebookmail.co

@@ -1,0 +1,51 @@
+Email traceback path timestamp: Pass
+Email Protocol Verification: Pass
+
+----------------------------------
+Mail Transit Timestamps:
+----------------------------------
+Sent timestamp:        2021-12-16 13:46:16+00:00
+Travel timestamp:      2021-12-16 13:46:16+00:00
+Travel timestamp:      2021-12-16 13:46:16+00:00
+Received timestamp: 2021-12-16 05:46:19-08:00
+
+
+-----------------
+Message-ID:
+-----------------
+SG2PR03MB3973632330DF6AA07DFAE24AC1779@SG2PR03MB3973.apcprd03.prod.outlook.com
+
+----------
+From:
+----------
+Suryakanta Bhattacharyya <rijubhattacharya@hotmail.com>
+
+----------
+To:
+----------
+Riju Bhattacharyya <ribh234@gmail.com>
+
+----------
+Subject:
+----------
+Fwd: Writing Feedback
+
+--------------------
+MIME-Version:
+--------------------
+1.0
+
+---------------------
+DKIM-Signature:
+---------------------
+v=1;a=rsa-sha256;c=relaxed/relaxed;d=hotmail.com;s=selector1;h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;bh=K0GGU3lqy/DneoIy7KA8kkvHRBOW2CWeqx9fhQieAuQ=;b=YQ08VaPQFCG7xh2b7rSHexHGiceFVklua5Sigjz2BcaQqRWNPYrKSlIS7FxLtCEge13LPO9EBzUitTF1P5gHBSYq+tiqVnNZ1IRH+RMIbwr4IYkze4MTfMCi8DAqKlnHr5cBMy+Xnckn/a146rhQXBbPmzdinzO+7p6ikYao7gsBvDeEbkBZAQKA/4DGtpwATRdy7+BbSW0l/T0KYqIqOUtDGKqzmkohnwIqucIAwkE6oLkiPkAK/dWp7OTAquYZh5fM+KMBOKGrs6furQV6bBFaZl27+yZ2fNAGbT2wREQCcXR415Vu1VJ/idAAJMkJ6Y5eUaa99GobpL3To780uA==
+
+-----------------
+Received by:
+-----------------
+2002:a05:6a10:fd06:0:0:0:0 with SMTP id gs6csp180171pxb
+
+-----------------
+Return-Path:
+-----------------
+rijubhattacharya@hotmail.com
